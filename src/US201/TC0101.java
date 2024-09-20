@@ -55,7 +55,7 @@ public class TC0101 extends BaseDriver {
         WebElement mail= driver.findElement(By.id("Email"));
         MyFunc.isDisplayed(mail,"Mail");
         MyFunc.isEnabled(mail,"Mail");
-        mail.sendKeys("techno.team9@gmail.com");
+        mail.sendKeys("techno.team99@gmail.com");
         MyFunc.wait(2);
 
         WebElement password= driver.findElement(By.id("Password"));
