@@ -20,6 +20,12 @@ public class MyFunc extends BaseDriver{
     public static void isDisplayed(WebElement element, String elementName){
         System.out.println(elementName +" is Displayed : " +element.isDisplayed());
         Assert.assertTrue(elementName+" isn't Displayed ",element.isDisplayed());
+
+    }
+    public static void isDisplayedNot(WebElement element, String elementName){
+        System.out.println(elementName +" isn't Displayed : " +element.isDisplayed());
+        Assert.assertNotEquals(elementName+" is Displayed ",element.isDisplayed());
+
     }
     public static void isEnabled(WebElement element,String elementName){
         System.out.println(elementName +" is Enabled : " +element.isEnabled());
@@ -35,9 +41,9 @@ public class MyFunc extends BaseDriver{
         Assert.assertNotEquals(elementName+" isn't Selected ",element.isSelected());
 
     }
-    public static void textIsDisplayed(WebElement element,String expectedText,String elementName){
-        System.out.println(elementName +" text : " +element.getText());
-        Assert.assertEquals(elementName+" text does not match ",expectedText,element.getText());
+    public static void textIsDisplayed(WebElement element,String elementName,String expectedText){
+        System.out.println("Element name text : " +element.getText());
+        Assert.assertEquals(elementName+" text does not match ",element.getText(),expectedText);
     }
 
 
