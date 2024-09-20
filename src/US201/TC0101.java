@@ -78,6 +78,8 @@ public class TC0101 extends BaseDriver {
 
         MyFunc.wait(3);
         driver.quit();
+
+
     }
 
 }
