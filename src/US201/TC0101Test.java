@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 
-public class TC0101 extends BaseDriver {
+public class TC0101Test extends BaseDriver {
     @Test
     public void Test1(){
 
